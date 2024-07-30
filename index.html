@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Solar System</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img src="AssetsImg/earth.jpeg" id="earth">
+            <img src="AssetsImg/jupiter.jpeg" id="jupiter">
+            <img src="AssetsImg/mars.jpeg" id="mars">
+            <img src="AssetsImg/mercury.jpeg" id="mercury">
+            <img src="AssetsImg/neptune.jpeg" id="neptune">
+            <img src="AssetsImg/saturn.jpeg" id="saturn">
+            <img src="AssetsImg/sun.jpeg" id="sun">
+            <img src="AssetsImg/uranus.jpeg" id="uranus">
+            <img src="AssetsImg/venus.jpeg" id="venus">
+        </a-assets>
+      <a-sky src="AssetsImg/space.jpeg"></a-sky>
+      <a-sphere radius="25" src="#sun" position="0 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;">
+        <a-sphere radius="5" src="#mercury" position="10 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+        <a-sphere radius="6" src="#venus" position="20 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+        <a-sphere radius="8" src="#earth" position="30 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+        <a-sphere radius="8" src="#mars" position="40 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+        <a-sphere radius="12" src="#jupiter" position="60 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+        <a-sphere radius="9.5" src="#saturn" position="75 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+        <a-sphere radius="7.5" src="#uranus" position="85 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+        <a-sphere radius="8" src="#neptune" position="95 1.25 -5" animation="property: rotation; to: 0 360 0; dur: 10000ms; loop: true;"></a-sphere>
+
+    </a-sphere>
+    </a-scene>
+  </body>
+</html>
